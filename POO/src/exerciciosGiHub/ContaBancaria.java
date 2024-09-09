@@ -2,39 +2,32 @@ package exerciciosGiHub;
 
 public class ContaBancaria {
 	protected int numConta;
-	protected String nomeCliente;
+	protected String cliente;
 	protected double saldo;
 	
-	public ContaBancaria(String NomeCliente, int NumConta, double Saldo) {
-		this.nomeCliente=NomeCliente;
+	public ContaBancaria(String Cliente, int NumConta, double Saldo) {
+		this.cliente=Cliente;
 		this.numConta=NumConta;
 		this.saldo=Saldo;
 	}
-	
 	public int getNumConta() {
 		return numConta;
 	}
-
 	public void setNumConta(int numConta) {
 		this.numConta = numConta;
 	}
-
 	public String getNomeCliente() {
-		return nomeCliente;
+		return cliente;
 	}
-
 	public void setNomeCliente(String nomeCliente) {
-		this.nomeCliente = nomeCliente;
+		this.cliente = nomeCliente;
 	}
-
 	public double getSaldo() {
 		return saldo;
 	}
-
 	public void setSaldo(double saldo) {
 		this.saldo = saldo;
 	}
-
 	// sacar
 	public void sacar(double quantRetirar) {
 		if (quantRetirar <= saldo) {
@@ -50,7 +43,7 @@ public class ContaBancaria {
 	// detalhes da conta
 	public void mostrarDetalhes() {
         System.out.println("Conta: " + numConta);
-        System.out.println("Cliente: " + nomeCliente);
+        System.out.println("Cliente: " + cliente);
         System.out.println("Saldo: " + saldo);
     }
 }
