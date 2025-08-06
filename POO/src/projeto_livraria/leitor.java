@@ -1,4 +1,4 @@
-package PUCRS;
+package projeto_livraria;
 
 public class leitor {
 	livro livroE;
